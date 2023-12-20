@@ -9,7 +9,7 @@ services:
       - .:/amonic
     environment:
       - DB_HOST=database
-      - DB_NAME=my_database
+      - DB_NAME=amonic_airlines
       - DB_USER=my_user
       - DB_PASS=pass
 
@@ -23,7 +23,7 @@ services:
     hostname: dbname
     image: mysql:8
     environment:
-      MYSQL_DATABASE: 'my_database'
+      MYSQL_DATABASE: 'amonic_airlines'
       MYSQL_USER: 'my_user'
       MYSQL_PASSWORD: 'pass'
       MYSQL_ROOT_PASSWORD: 'rootpass'
